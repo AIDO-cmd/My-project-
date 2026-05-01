@@ -9,6 +9,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 li {
   list-style: none;
@@ -24,17 +25,17 @@ h3 {
   color: #999;
 }
 .btn {
-  background: #4353e9;
+  background: #0d941f;
   color: white;
   padding: 5px 10px;
   text-align: center;
   border-radius: 5px;
 }
 .btn:hover {
-  color: #4353e9;
+  color: #0d941f;
   background: white;
   padding: 3px 8px;
-  border: 2px solid #4353e9;
+  border: 2px solid #0d941f;
 }
 .title {
   display: flex;
@@ -53,7 +54,7 @@ td {
 }
 .side-menu {
   position: fixed;
-  background: #4353e9;
+  background: #0d941f;
   width: 20vw;
   min-height: 100vh;
   display: flex;
@@ -78,7 +79,7 @@ td {
 }
 .side-menu li:hover {
   background: white;
-  color: #4353e9;
+  color: #0d941f;
 }
 .container {
   grid-area: menu;
@@ -218,14 +219,14 @@ td {
   height: 50px;
 }
 .side-menu {
-  background: #4353e9;
+  background: #0d941f;
 }
 
 .btn {
-  background: #4353e9;
+  background: #0d941f;
 }
 
 .btn:hover {
-  color: #4353e9;
-  border: 2px solid #4353e9;
+  color: #0d941f;
+  border: 2px solid #0d941f;
 }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Students Page</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  display:flex;
+  background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+  width:250px;
+  height:100vh;
+  background:#1f2937;
+  color:#fff;
+  padding:20px;
+  position:fixed;
+}
+
+.sidebar a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  padding:10px;
+  margin:10px 0;
+  border-radius:8px;
+}
+
+.sidebar a:hover{
+  background:#374151;
+}
+
+/* Main */
+.main{
+  margin-left:250px;
+  width:calc(100% - 250px);
+}
+
+/* Topbar */
+.topbar{
+  height:70px;
+  background:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px;
+  border-left:5px solid #4353E9;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Content */
+.content{
+  padding:20px;
+}
+
+/* Button */
+.btn{
+  background:#4353E9;
+  color:#fff;
+  padding:10px 15px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+/* Table */
+table{
+  width:100%;
+  margin-top:20px;
+  background:#fff;
+  border-collapse:collapse;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+th,td{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+}
+
+th{
+  background:#4353E9;
+  color:#fff;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin Panel</h2>
+  <a href="students.html">Students</a>
+  <a href="teachers.html">Teachers</a>
+  <a href="classes.html">Classes</a>
+  <a href="subjects.html">Subjects</a>
+  <a href="assignments.html">Assignments</a>
+  <a href="reports.html">Reports</a>
+  <a href="settings.html">Settings</a>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <h3>Students</h3>
+    <div>Admin</div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <button class="btn">+ Add Student</button>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Actions</th>
+      </tr>
+
+      <tr>
+        <td>001</td>
+        <td>John Banda</td>
+        <td>Form 2</td>
+        <td>Edit | Delete</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Mary Phiri</td>
+        <td>Form 3</td>
+        <td>Edit | Delete</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>

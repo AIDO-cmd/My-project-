@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Settings</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      body {
+        display: flex;
+        background: #f4f6f9;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #1f2937;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+      }
+      .main {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+      }
+
+      .topbar {
+        height: 70px;
+        background: #fff;
+        border-left: 5px solid #4353e9;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .content {
+        padding: 20px;
+      }
+
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      .btn {
+        background: #4353e9;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <a href="settings.html">Settings</a>
+    </div>
+
+    <div class="main">
+      <div class="topbar"><h3>Settings</h3></div>
+
+      <div class="content">
+        <div class="card">
+          <h4>School Info</h4>
+          <input class="input" placeholder="School Name" />
+          <input class="input" placeholder="Location" />
+          <button class="btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

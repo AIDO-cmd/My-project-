@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Teachers</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      body {
+        display: flex;
+        background: #f4f6f9;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #4353e9;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+      }
+      .sidebar a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+      }
+      .sidebar a:hover {
+        background: #374151;
+      }
+
+      .main {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+      }
+      .topbar {
+        height: 70px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-left: 5px solid #4353e9;
+      }
+      .content {
+        padding: 20px;
+      }
+
+      .btn {
+        background: #4353e9;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+        background: #fff;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background: #4353e9;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <a href="students.html">Students</a>
+      <a href="teachers.html">Teachers</a>
+      <a href="classes.html">Classes</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+    </div>
+
+    <div class="main">
+      <div class="topbar"><h3>Teachers</h3></div>
+
+      <div class="content">
+        <button class="btn">Add Teacher</button>
+
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>T01</td>
+            <td>Mr Phiri</td>
+            <td>Math</td>
+            <td>Delete</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
