@@ -1,2 +1,2 @@
-# My-project-
-A secondary student management system
+# student-management-system
+A student management and assessment system

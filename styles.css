@@ -30,11 +30,24 @@ h3 {
   text-align: center;
   border-radius: 5px;
 }
+.btn2 {
+  background: #0d941f;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
 .btn:hover {
   color: #4353e9;
   background: white;
   padding: 3px 8px;
   border: 2px solid #4353e9;
+}
+.btn2:hover {
+  color: #0d941f;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid #0d941f;
 }
 .title {
   display: flex;
@@ -59,13 +72,35 @@ td {
   display: flex;
   flex-direction: column;
 }
+.side-menu2 {
+  position: fixed;
+  background: #0d941f;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .school-name {
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.school-logo img {
+  width: 100px;
+  height: 90px;
+}
+.school-title {
+  color: white;
+}
 .side-menu li {
+  font-size: 24px;
+  padding: 10px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.side-menu2 li {
   font-size: 24px;
   padding: 10px 40px;
   color: white;
@@ -76,9 +111,17 @@ td {
   width: 40px;
   height: 40px;
 }
+.side-menu2 li img {
+  width: 40px;
+  height: 40px;
+}
 .side-menu li:hover {
   background: white;
   color: #4353e9;
+}
+.side-menu2 li:hover {
+  background: white;
+  color: #0d941f;
 }
 .container {
   grid-area: menu;
@@ -217,15 +260,11 @@ td {
   width: 50px;
   height: 50px;
 }
-.side-menu {
-  background: #4353e9;
+input {
+  border-radius: 5px;
+  height: 20px;
 }
-
-.btn {
-  background: #4353e9;
-}
-
-.btn:hover {
-  color: #4353e9;
-  border: 2px solid #4353e9;
+.form {
+  display: flex;
+  font-size: large;
 }

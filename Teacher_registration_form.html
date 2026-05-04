@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Teacher Registration</title>
+    <link rel="stylesheet" href="teacher.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="side-menu">
+      <div class="school-name">
+        <h1>SCHOOL NAME</h1>
+      </div>
+
+      <ul>
+        <li>
+          <img src="images/dashboard-monitor.png" alt="" />&nbsp;<a href="">Dashboard</a>
+        </li>
+        <li><img src="images/icons8-teacher-50.png" alt="" />&nbsp;<a href="">Teachers</a></li>
+        <li><img src="images/icons8-student-80.png" alt="" />&nbsp;<a href="">Students</a></li>
+        <li>
+          <img src="images/icons8-school-building-48.png" alt="" />&nbsp;<a href="">Schools</a>
+        </li>
+        <li>
+          <img src="images/icons8-progress-100.png" alt="" />&nbsp;<a href="">Progress</a>
+        </li>
+        <li><img src="images/icons8-log-out-50.png" alt="" />&nbsp;<a href="">Log out</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="nav">
+          <div class="search">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <img src="images/search.png" alt="" />
+            </button>
+          </div>
+
+          <div class="user">
+            <a href="#" class="btn">View Teachers</a>
+            <img src="images/icons8-notification-bell-24.png" alt="" />
+            <div class="user-container">
+              <img src="images/icons8-profile-picture-48.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="content">
+              <form action="teacher_register.php" method="post">
+
+                <!-- Personal Information -->
+                <div class="card">
+                  <div class="title">
+                    <h2>Personal Information</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>First Name</label>
+                      <input type="text" name="first_name" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Last Name</label>
+                      <input type="text" name="last_name" required/>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Date of Birth</label>
+                      <input type="date" name="dob" min="1970-12-12" max="2026-01-01" required/>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Gender</label>
+                      <select name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                      <div class="form-group">
+                        <label for="">Marital Status:</label>
+                      <select name="marital_status">
+                        <option value=""></option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Prefer not say</option>
+                      </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">Nationality</label>
+                        <select name="nationality" required>
+                        <option value="">-- Select --</option>
+                        <option >Malawi</option>
+                        <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">National ID / Passport Number</label>
+                        <input type="" name="national_id" required />
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Academic qualifications -->
+                <div class="card">
+                  <div class="title">
+                    <h2>Contact Details</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Phone Number (format: +265xxxxxxxxx or 08xxxxxxxx or 09xxxxxxxx)</label>
+                      <input type="tel" placeholder="+265xxxxxxxxx" pattern="^\+265|08|09[0-9]{7,9}$" />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Email Address</label>
+                      <input type="email" placeholder=" e.g teachername@gmail.com"/>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Home Address</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Academic qualifications-->
+                <div class="card">
+                  <div class="title">
+                    <h2>Academic Qualifications</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Highest level of education</label>
+                    <select name="qualification" required>
+                      <option value="">-- Select --</option>
+                      <option value="cert">Certificate</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="bdegree">Bachelor's Degree</option>
+                      <option value="postdiploma">Postgraduate Diploma</option>
+                      <option value="mdegree">Master's Degree</option>
+                      <option value="phd">PhD / Doctorate</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Field of study</label>
+                      <input
+                        type="text"
+                        name="field_of_study"
+                        placeholder="e.g. Education, Mathematics"
+                        required/>
+                    </div>
+
+                    <div class="form-group">
+                      <label>University attended</label>
+                         <input
+                          type="text"
+                          name="institution"
+                          placeholder="e.g. Malawi University of Science and Technology"
+                          required/>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Year of graduation</label>
+                      <input
+                        type="number"
+                        name="grad_year"
+                        min="1970"
+                        max="2025"
+                        placeholder="e.g. 2018"
+                        required/>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Teaching Information -->
+                <div class="card">
+                  <div class="title">
+                    <h2>Teaching Information</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Department</label>
+                      <select name="department">
+                        <option></option>
+                        <option value="sciences">Sciences</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="language">Language</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Subject Assigned</label>
+                      <select name="subject_assigned">
+                        <option value="">-- Select --</option>
+                        <option value="">Mathematics</option>
+                        <option>Computer Studies</option>
+                        <option>Chichewa</option>
+                        <option>English</option>
+                        <option>Biology</option>
+                        <option>Physics</option>
+                        <option>Agriculture</option>
+                        <option>Geography</option>
+                        <option>Chemistry</option>
+                        <option>Social Studies</option>
+                        <option>Life Skills</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Class Assigned</label>
+                      <select name="class_assigned">
+                        <option>Form 1</option>
+                        <option>Form 2</option>
+                        <option>Form 3</option>
+                        <option>Form 4</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Years of Experience</label>
+                      <input name="experience" type="number" min="1"/>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Employment Details -->
+                <div class="card">
+                  <div class="title">
+                    <h2>Employment Details</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Staff ID</label>
+                      <input name="staff_id" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Date Employed</label>
+                      <input name="date_employed" type="date" />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Employment Type</label>
+                      <select name="employment_type">
+                        <option value="">-- Select --</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- System Access -->
+                <div class="card">
+                  <div class="title">
+                    <h2>System Access</h2>
+                  </div>
+
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label>Username</label>
+                      <input name="username" type="text" />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input name="password" type="password" />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Confirm Password</label>
+                      <input name="confirm_password" type="password" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <button class="teacher-regstration-button">Register</button>
+                </div>
+
+              </form>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

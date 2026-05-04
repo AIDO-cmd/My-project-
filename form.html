@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teacher Registration Form</title>
+  </head>
+  <body>
+    <h1>Teacher Registration Form</h1>
+    <p>Please fill in all required fields marked with <strong>*</strong>.</p>
+    <hr />
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- Section 1: Personal Information -->
+      <h2>1. Personal Information</h2>
+
+      <p>
+        <label
+          >First Name *<br />
+          <input type="text" name="firstName" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Middle Name<br />
+          <input type="text" name="middleName" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Last Name *<br />
+          <input type="text" name="lastName" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Date of Birth *<br />
+          <input type="date" name="dob" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Gender *<br />
+          <select name="gender" required>
+            <option value="">-- Select --</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Nationality *<br />
+          <input type="text" name="nationality" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          
+        </label>
+      </p>
+
+      <p>
+    
+          
+      </p>
+
+      <hr />
+
+      <!-- Section 2: Contact Details -->
+      <h2>2. Contact Details</h2>
+
+      <p>
+        <label
+          >Phone Number *<br />
+          <input type="tel" name="phone" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Alternative Phone Number<br />
+          <input type="tel" name="altPhone" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Email Address *<br />
+          <input type="email" name="email" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Residential Address *<br />
+          <input type="text" name="address" size="50" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Emergency Contact Name *<br />
+          <input type="text" name="emergencyName" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Emergency Contact Phone *<br />
+          <input type="tel" name="emergencyPhone" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Relationship to Emergency Contact<br />
+          <select name="emergencyRelation">
+            <option value="">-- Select --</option>
+            <option>Spouse</option>
+            <option>Parent</option>
+            <option>Sibling</option>
+            <option>Child</option>
+            <option>Friend</option>
+            <option>Other</option>
+          </select>
+      </p>
+
+      <hr />
+
+      <!-- Section 3: Academic Qualifications -->
+      <h2>3. Academic Qualifications</h2>
+
+      <p>
+        <label
+          >Highest Qualification *<br />
+          
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Field of Study *<br />
+          
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Institution Attended *<br />
+       
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Year of Graduation *<br />
+          
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Teaching Certificate Number *<br />
+          <input type="text" name="certNumber" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Certificate Expiry Date<br />
+          <input type="date" name="certExpiry" />
+        </label>
+      </p>
+
+      <hr />
+
+      <!-- Section 4: Teaching Specialization -->
+      <h2>4. Teaching Specialization</h2>
+
+      <p><strong>Subjects Taught *</strong> (tick all that apply)</p>
+      <p>
+        <label
+          ><input type="checkbox" name="subjects" value="Mathematics" />
+          Mathematics</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="English" />
+          English</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Physics" />
+          Physics</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Chemistry" />
+          Chemistry</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Biology" />
+          Biology</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Geography" />
+          Geography</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="History" />
+          History</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Chichewa" />
+          Chichewa</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Social Studies" />
+          Social Studies</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Life Skills" /> Life
+          Skills</label
+        ><br />
+        <label><input type="checkbox" name="subjects" value="ICT" /> ICT</label
+        ><br />
+        <label
+          ><input type="checkbox" name="subjects" value="Agriculture" />
+          Agriculture</label
+        >
+      </p>
+
+      <p><strong>Form Levels Taught *</strong> (tick all that apply)</p>
+      <p>
+        <label
+          ><input type="checkbox" name="forms" value="Form 1" /> Form 1</label
+        ><br />
+        <label
+          ><input type="checkbox" name="forms" value="Form 2" /> Form 2</label
+        ><br />
+        <label
+          ><input type="checkbox" name="forms" value="Form 3" /> Form 3</label
+        ><br />
+        <label
+          ><input type="checkbox" name="forms" value="Form 4" /> Form 4</label
+        >
+      </p>
+
+      <p>
+        <label
+          >Primary Teaching Language<br />
+          <select name="language">
+            <option value="">-- Select --</option>
+            <option>English</option>
+            <option>Chichewa</option>
+            <option>Both</option>
+          </select>
+        </label>
+      </p>
+
+      <hr />
+
+      <!-- Section 5: Employment Details -->
+      <h2>5. Employment Details</h2>
+
+      <p>
+        <label
+          >Staff / Employee ID<br />
+          <input type="text" name="staffId" placeholder="Assigned by school" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Date of Employment *<br />
+          <input type="date" name="employmentDate" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Employment Type *<br />
+          <select name="employmentType" required>
+            <option value="">-- Select --</option>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Contract</option>
+            <option>Volunteer</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Department / Faculty<br />
+          <input
+            type="text"
+            name="department"
+            placeholder="e.g. Sciences, Humanities"
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Role / Designation *<br />
+          <select name="role" required>
+            <option value="">-- Select --</option>
+            <option>Teacher</option>
+            <option>Head of Department</option>
+            <option>Deputy Headteacher</option>
+            <option>Headteacher</option>
+            <option>Guidance Counselor</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Class Teacher Assignment<br />
+          <select name="classTeacher">
+            <option value="">-- None --</option>
+            <option>Form 1A</option>
+            <option>Form 1B</option>
+            <option>Form 1C</option>
+            <option>Form 2A</option>
+            <option>Form 2B</option>
+            <option>Form 2C</option>
+            <option>Form 3A</option>
+            <option>Form 3B</option>
+            <option>Form 3C</option>
+            <option>Form 4A</option>
+            <option>Form 4B</option>
+            <option>Form 4C</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Years of Teaching Experience *<br />
+          <input
+            type="number"
+            name="experience"
+            min="0"
+            max="60"
+            placeholder="e.g. 5"
+            required
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Previous School(s) Worked At<br />
+          <textarea
+            name="previousSchools"
+            rows="4"
+            cols="50"
+            placeholder="List previous schools and years, e.g. Kamuzu Academy (2015-2019)"
+          ></textarea>
+        </label>
+      </p>
+
+      <hr />
+
+      <!-- Section 6: System Access -->
+      <h2>6. System Access &amp; Login</h2>
+
+      <p>
+        <label
+          >Preferred Username *<br />
+          <input type="text" name="username" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Password *<br />
+          <input type="password" name="password" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Confirm Password *<br />
+          <input type="password" name="confirmPassword" required />
+        </label>
+      </p>
+
+      <p><strong>System Access Level</strong></p>
+      <p>
+        <label
+          ><input type="radio" name="accessLevel" value="basic" /> Basic (Marks
+          entry only)</label
+        ><br />
+        <label
+          ><input type="radio" name="accessLevel" value="standard" checked />
+          Standard (Marks + Reports)</label
+        ><br />
+        <label
+          ><input type="radio" name="accessLevel" value="admin" /> Admin (Full
+          access)</label
+        >
+      </p>
+
+      <hr />
+
+      <!-- Section 7: Documents -->
+      <h2>7. Document Uploads</h2>
+
+      <p>
+        <label
+          >Profile Photo * (JPG or PNG)<br />
+          <input type="file" name="photo" accept="image/*" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Academic Certificate(s) (PDF or image)<br />
+          <input
+            type="file"
+            name="certificates"
+            accept=".pdf,image/*"
+            multiple
+          />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Teaching License / Certificate (PDF or image)<br />
+          <input type="file" name="license" accept=".pdf,image/*" />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >National ID Copy (PDF or image)<br />
+          <input type="file" name="nationalIdDoc" accept=".pdf,image/*" />
+        </label>
+      </p>
+
+      <hr />
+
+      <!-- Section 8: Declaration -->
+      <h2>8. Declaration</h2>
+
+      <p>
+        I, the undersigned, declare that all information provided in this
+        registration form is true, accurate, and complete to the best of my
+        knowledge. I understand that any false or misleading information may
+        result in cancellation of my registration and/or disciplinary action. I
+        consent to the school processing and storing my personal data for
+        administrative and educational purposes.
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="declaration" required />
+          I agree to the declaration above *
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Date *<br />
+          <input type="date" name="signatureDate" required />
+        </label>
+      </p>
+
+      <hr />
+
+      <p>
+        <input type="submit" value="Submit Registration" />
+        &nbsp;
+        <input type="reset" value="Clear Form" />
+      </p>
+    </form>
+  </body>
+</html>
